@@ -24,14 +24,14 @@ class Cowboy(Humain):
     def tirer(self, brigandCible):
         from ClasseBrigand import Brigand
         if type(brigandCible) == Brigand:
-            print(f"Le {self.__adjectif} {self.getNom()} tire sur {brigandCible.getNom()}.")
+            print(f"Le {self.__adjectif} {self._nom} tire sur {brigandCible.getNom()}.")
             print("PAN!")
             print("- Prend ça, rascal!")
 
     def liberer(self, dame):
         from ClasseDame import Dame
         if type(dame)== Dame:
-            dame.libererDame(self.getNom())
+            dame.libererDame(self._nom)
 
     def sePresenter(self):
         super().sePresenter()

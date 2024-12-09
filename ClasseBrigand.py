@@ -51,7 +51,7 @@ class Brigand(Humain):
             print(f"Damned, je suis fait! {sherif.getNom()} tu m'as eu!")
 
     def quelEstTonNom(self):
-        print(f"Je suis {self.getNom()} le {self.getLook()}")
+        print(f"Je suis {self._nom} le {self.getLook()}")
 
     def sePresenter(self):
         super().sePresenter()
@@ -59,7 +59,7 @@ class Brigand(Humain):
         print(f"Ma tête est mise à prix {self.__recompense}$!")
 
     def manger(self):
-        print(f"{self.getNom()} mange salement!")
+        print(f"{self._nom} mange salement!")
 
 
 '''brigandTest = Brigand("brigandTest", 0, False)

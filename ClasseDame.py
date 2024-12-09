@@ -33,10 +33,10 @@ class Dame(Humain):
             self.__etat = newEtat
 
     def quelEstTonNom(self):
-        print(f"Bonjour, je suis miss {self.getNom()}")
+        print(f"Bonjour, je suis miss {self._nom}")
 
     def sePresenter(self):
-        super().sePresenter()
+        self.quelEstTonNom()
         print(f"Ma robe est de couleur {self.__robe}!")
 
     def manger(self):

@@ -25,7 +25,7 @@ class Sherif(Cowboy):
     def rechercher(self, brigand):
         from ClasseBrigand import Brigand
         if type(brigand) == Brigand:
-            print(f"Le {self.getNom()} placarde des affiches dans la ville.")
+            print(f"Le {self._nom} placarde des affiches dans la ville.")
             print(f"- OYEZ OYEZ BRAVE GENS !! {brigand.getRecompense()}$ à qui arrêtera {brigand.getNom()} le {brigand.getLook()} mort ou vif!")
 
     def sePresenter(self):

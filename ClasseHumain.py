@@ -3,41 +3,41 @@ from abc import ABC, abstractmethod
 class Humain:
     @abstractmethod
     def __init__(self, nom : str, boissonFav : str = "eau"):
-        self.__nom = nom
-        self.__boissonFav = boissonFav
+        self._nom = nom
+        self._boissonFav = boissonFav
 
     def getNom(self):
-        return self.__nom
+        return self._nom
 
     def quelEstTonNom(self):
-        print(f"Bonjour, je suis {self.__nom}")
+        print(f"Bonjour, je suis {self._nom}")
         
     def getBoissonFav(self):
-        return self.__boissonFav
+        return self._boissonFav
     
     def setNom(self, newNom : str):
         if type(newNom) == str:
-            self.__nom = newNom
+            self._nom = newNom
 
     def setBoissonFav(self, newBoisson : str):
         if type(newBoisson) == str:
-            self.__boissonFav = newBoisson
+            self._boissonFav = newBoisson
         
     def __str__(self):
-        return (f"Nom: {self.__nom}, boisson favorite: {self.__nom}")
+        return (f"Nom: {self._nom}, boisson favorite: {self._nom}")
     
     def sePresenter(self):
-        print (f"Bonjour, je suis {self.__nom} et ma boisson préferée est {self.__boissonFav}!")
+        print (f"Bonjour, je suis {self._nom} et ma boisson préferée est {self._boissonFav}!")
 
     def boire(self):
-        print (f"Ah ! Un bon verre de {self.__boissonFav}! GLOUPS!")
+        print (f"Ah ! Un bon verre de {self._boissonFav}! GLOUPS!")
 
     @abstractmethod
     def manger(self):
-        print(f"{self.__nom} mange.")
+        print(f"{self._nom} mange.")
     
     @abstractmethod
     def parler(self, texte : str):
         if type(texte) == str:
-            print (f"({self.__nom}) - {texte}")
+            print (f"({self._nom}) - {texte}")
         
