@@ -27,7 +27,7 @@ class Barman(Humain):
         print(f"{humain.getNom()}, je vous sert un verre de {humain.getBoissonFav()}")
 
     def manger(self):
-        return super().manger()
+        print(f"{self._nom} mange.")
     
 
 

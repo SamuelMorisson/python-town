@@ -32,6 +32,9 @@ class Sherif(Cowboy):
         super().sePresenter()
         print(f"J'ai emrpisonné {self.__brigandEmprisonne} brigand(s)!")
 
+    def manger(self):
+        print(f"{self._nom} mange.")
+
 
 
 '''sherifTest = Sherif("sherifTest")

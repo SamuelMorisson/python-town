@@ -38,7 +38,7 @@ class Cowboy(Humain):
         print(f"On dit que je suis {self.__adjectif} et ma popularité est de {self.__popularite}!")
 
     def manger(self):
-        return super().manger()
+        print(f"{self._nom} mange.")
 
 
 

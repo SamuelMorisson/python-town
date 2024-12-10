@@ -40,7 +40,7 @@ class Dame(Humain):
         print(f"Ma robe est de couleur {self.__robe}!")
 
     def manger(self):
-        return super().manger()
+        print(f"{self._nom} mange.")
 
 
 
