@@ -72,3 +72,11 @@ def manger(humain = [dametest, brigandTest, cowboyTest, sherifTest, barmanTest])
         personnage.manger()
         print("---")
 #manger()
+
+
+def parler(humain = [dametest, brigandTest, cowboyTest, sherifTest, barmanTest]):
+    for personnage in humain:
+        personnage.parler("texte du personnage")
+        print("---")
+
+#parler()
