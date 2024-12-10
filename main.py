@@ -60,14 +60,11 @@ def rechercher(sherif = sherifTest, brigand = brigandTest):
 #rechercher()
 
 
-def servirVerre(humain, barman = barmanTest):
-    barmanTest.servirVerre(humain)
-'''servirVerre(dametest)
-servirVerre(brigandTest)
-servirVerre(cowboyTest)
-servirVerre(sherifTest)
-barmanTest2 = Barman("nomBarman2")
-servirVerre(barmanTest2)'''
+def servirVerre(humain = [dametest, brigandTest, cowboyTest, sherifTest, barmanTest], barman = barmanTest):
+    for personnage in humain:
+        barman.servirVerre(personnage)
+        print("---")
+#servirVerre()
 
 
 def manger(humain = [dametest, brigandTest, cowboyTest, sherifTest, barmanTest]):
